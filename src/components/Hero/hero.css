@@ -1,0 +1,151 @@
+/* src/components/Hero/Hero.css */
+.hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 120px 5% 60px; /* Espace en haut et en bas */
+  background-color: #f4f6f8; /* Fond clair */
+  text-align: center;
+  overflow: hidden; /* Empêche les barres de défilement pendant l'animation */
+}
+
+.hero-container {
+  max-width: 1200px;
+  width: 100%;
+}
+
+.hero-main-title {
+  font-family: 'Teko', sans-serif;
+  font-size: 5rem;
+  text-transform: uppercase;
+  color: #1a1a1a;
+  margin-bottom: 50px;
+}
+
+.hero-main-title .highlight-red {
+  color: #bc0529;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.hero-card {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  height: 400px;
+  /* On garde les éléments invisibles au début pour l'animation */
+  opacity: 0; 
+}
+
+.hero-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Assure que l'image remplit la carte sans se déformer */
+  transition: transform 0.4s ease;
+}
+
+.hero-card:hover img {
+  transform: scale(1.05); /* Effet de zoom au survol */
+}
+
+.card-title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+  color: white;
+  font-family: 'Teko', sans-serif;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  text-align: left;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(50px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Applique l'animation de secours aux cartes */
+.hero-card {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  height: 400px;
+  opacity: 0; /* GSAP prendra le contrôle de ça */
+  animation: fadeIn 1s ease-out 0.5s forwards; /* L'animation CSS de secours */
+}
+.hero-section {
+  position: relative; /* Nécessaire pour positionner les formes abstraites */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 120px 5% 60px;
+  background-color: #f4f6f8;
+  text-align: center;
+  overflow: hidden;
+}
+
+.hero-main-title {
+  font-family: 'Teko', sans-serif;
+  font-size: 5rem;
+  text-transform: uppercase;
+  color: #1a1a1a;
+  margin-bottom: 10px; /* Réduit pour rapprocher le sous-titre */
+}
+
+.hero-main-title .highlight-red {
+  color: #bc0529;
+}
+
+/* Style du nouveau sous-titre */
+.hero-subtitle {
+  font-size: 1.3rem;
+  color: #555;
+  max-width: 600px;
+  margin: 0 auto 50px auto; /* Centre le sous-titre et ajoute de l'espace en dessous */
+  opacity: 0; /* Pour l'animation */
+}
+
+/* ... styles .hero-grid, .hero-card ... */
+
+
+/* Styles pour les formes abstraites */
+.shape {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0; /* Pour l'animation d'apparition */
+  background: linear-gradient(45deg, rgba(0, 85, 185, 0.1), rgba(188, 5, 41, 0.1));
+}
+
+.shape-1 {
+  width: 200px;
+  height: 200px;
+  top: 15%;
+  left: 10%;
+}
+
+.shape-2 {
+  width: 100px;
+  height: 100px;
+  top: 60%;
+  right: 15%;
+}
+
+.shape-3 {
+  width: 50px;
+  height: 50px;
+  top: 25%;
+  right: 25%;
+}

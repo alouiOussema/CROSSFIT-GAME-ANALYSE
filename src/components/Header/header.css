@@ -1,0 +1,62 @@
+/* src/components/Header/Header.css */
+.header {
+  background-color: #ffffff; /* Fond blanc */
+  padding: 15px 5%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 90%;
+  z-index: 1000;
+  border-bottom: 1px solid #e0e0e0; /* Bordure grise subtile */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* Ombre légère */
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo {
+  height: 80px;
+  width: auto;
+}
+
+
+
+
+.nav-menu {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-item {
+  color: #1a1a1a; /* Texte foncé */
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding-bottom: 5px;
+  border-bottom: 2px solid transparent;
+  transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+.nav-item:hover {
+  color: #bc0529; /* Rouge au survol */
+}
+
+.nav-item.active {
+  color: #0055b9; /* Bleu pour l'élément actif */
+  border-bottom-color: #0055b9;
+}
+.dashboard{
+    background-color: #bc0529;
+    padding: .8em;
+    border: none;
+    border-radius: 8px;
+    color: #ffffff;
+}
