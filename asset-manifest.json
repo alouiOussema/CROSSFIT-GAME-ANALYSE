@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/CROSSFIT-GAME-ANALYSE/static/css/main.69853908.css",
+    "main.js": "/CROSSFIT-GAME-ANALYSE/static/js/main.b876d67c.js",
+    "static/media/card-1.jpg": "/CROSSFIT-GAME-ANALYSE/static/media/card-1.0f2c907881dc5357d290.jpg",
+    "static/media/card-2.jpg": "/CROSSFIT-GAME-ANALYSE/static/media/card-2.e70e2bb64fe6e04e312e.jpg",
+    "static/media/froning.png": "/CROSSFIT-GAME-ANALYSE/static/media/froning.d5105a54c3268439d8d4.png",
+    "static/media/card-3.jpg": "/CROSSFIT-GAME-ANALYSE/static/media/card-3.6a4bfa0e9d902345844a.jpg",
+    "static/media/about-crossfit.webp": "/CROSSFIT-GAME-ANALYSE/static/media/about-crossfit.1420c6abf1187f69b186.webp",
+    "static/media/annie.jpg": "/CROSSFIT-GAME-ANALYSE/static/media/annie.091c54b3e4f740a84715.jpg",
+    "static/media/toomey.jpeg": "/CROSSFIT-GAME-ANALYSE/static/media/toomey.42189c55e0c9d8aad9df.jpeg",
+    "static/media/logo.svg": "/CROSSFIT-GAME-ANALYSE/static/media/logo.daa60c871c10be18419f05115a78ba9a.svg",
+    "static/media/mederios.webp": "/CROSSFIT-GAME-ANALYSE/static/media/mederios.aa878fd631dc11f6cf7d.webp",
+    "static/media/fraser.webp": "/CROSSFIT-GAME-ANALYSE/static/media/fraser.593899631d53b573f3a2.webp",
+    "static/media/katrin.jfif": "/CROSSFIT-GAME-ANALYSE/static/media/katrin.502db8ae78c6c279bca0.jfif",
+    "index.html": "/CROSSFIT-GAME-ANALYSE/index.html",
+    "main.69853908.css.map": "/CROSSFIT-GAME-ANALYSE/static/css/main.69853908.css.map",
+    "main.b876d67c.js.map": "/CROSSFIT-GAME-ANALYSE/static/js/main.b876d67c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.69853908.css",
+    "static/js/main.b876d67c.js"
+  ]
+}
